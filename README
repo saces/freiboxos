@@ -1,0 +1,29 @@
+
+== Build scripts to build FreiboxOS/FreiBSD ==
+
+These scripts are not intended to be an universial build system in the first
+place, if you are looking for such have a look into /usr/ports/sysutils/freesbie
+or /usr/ports/sysutils/livecd.
+
+== Versions ==
+
+live - a minimal live version to run a Freenet node for demonstration purposes
+       or for 'hardware is good for freenet' certification
+fbos - installer(s) for a permanent node
+       Kernels: default - in theory it should work on any i386 that can deal
+                          with Freenet
+                freibox - optimized for FreiBox reference hardware
+
+       Software: normal - 
+                 dev    - all you need to create/update the installer/updates
+
+==
+
+get the sources:
+cvsup.sh - get/update bsd sources
+get-freenet.sh - get/update all freenet sources
+
+build:
+build-bsd.sh - build the distro
+build-freenet.sh - build the node
+build-iso.sh - make the iso
